@@ -1,7 +1,5 @@
 ---
-title: "stellassymonds.github.io"
+title: "Stella Symonds"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hi! My name is Stella Symonds and I am in my third year at UCSB pursuing a B.S. in Environmental Studies. 
