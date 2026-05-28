@@ -2,3 +2,11 @@
 title: "About Me"
 editor: visual
 ---
+
+hobbies
+
+favorite things
+
+goals
+
+travels
