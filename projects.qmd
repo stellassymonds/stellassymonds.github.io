@@ -1,8 +1,8 @@
 ---
 title: "Projects"
 editor: visual
+listing: 
+  contents: posts # name of folder with posts
+  type: grid 
+  sort: "date desc"
 ---
-
-coding
-
-article
