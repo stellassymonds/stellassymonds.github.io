@@ -1,5 +1,18 @@
 ---
 title: "Stella Symonds"
+image: media/headshot.png
+2toc: false
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/stella-symonds/
+    - text: GitHub
+      href: https://github.com/stellassymonds
+    - text: Email
+      href: mailto:stella.symonds@gmail.com
 ---
 
-Hi! My name is Stella Symonds and I am in my third year at UCSB pursuing a B.S. in Environmental Studies. 
+Hi! My name is Stella Symonds and I am in my third year at UCSB pursuing a B.S. in Environmental Studies with a concentration in Statistics. 
