@@ -3,4 +3,4 @@ title: "Experience"
 editor: visual
 ---
 
-insert resume
+knitr::include_graphics("docs/resume.pdf")\
