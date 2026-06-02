@@ -11,7 +11,7 @@ This past year I've been experimenting with yeast! I baked my first loaf of brea
 
 :::::: {layout-style="auto" layout-ncol="3"}
 ::::: figure
-![One of my recent loaves](media/bread.png){.regular-hover}
+![One of my recent loaves](media/bread.png){.regular-hover width="1000"}
 
 ::: figure
 ![Cinnamon rolls with extra cinnamon](media/cinnamon.png){.regular-hover}
