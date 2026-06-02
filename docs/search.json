@@ -14,11 +14,18 @@
     "text": "knitr::include_graphics(“docs/resume.pdf”)"
   },
   {
+    "objectID": "posts/2026-05-30-resstock-article/index.html",
+    "href": "posts/2026-05-30-resstock-article/index.html",
+    "title": "How to Generate Load Profiles with ResStock and ComStock",
+    "section": "",
+    "text": "Here is where I will start writing my actual blog post content.\n\n\n\nCitationBibTeX citation:@online{symonds2026,\n  author = {Symonds, Stella},\n  title = {How to {Generate} {Load} {Profiles} with {ResStock} and\n    {ComStock}},\n  date = {2026-05-30},\n  url = {https://stellassymonds.github.io/posts/2026-05-30-resstock-article/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nSymonds, Stella. 2026. “How to Generate Load Profiles with\nResStock and ComStock.” May 30, 2026. https://stellassymonds.github.io/posts/2026-05-30-resstock-article/."
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "coding\narticle"
+    "text": "How to Generate Load Profiles with ResStock and ComStock\n\n\nblog post description\n\n\n\nStella Symonds\n\n\nMay 30, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to Generate Load Profiles with ResStock and ComStock\n\n\nblog post description\n\n\n\nStella Symonds\n\n\nMay 30, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "things.html",
@@ -26,6 +33,13 @@
     "title": "Things I’ve made",
     "section": "",
     "text": "In my opinion, there’s no better feeling than holding something I’ve made with my own hands.\nBaking\ninsert photo\nThis past year I’ve been experimenting with yeast! I baked my first loaf of bread and tested out cinnamon rolls and cardamom buns.\nsewing\ncrochet"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "How to Generate Load Profiles with ResStock and ComStock",
+    "section": "",
+    "text": "Here is where I will start writing my actual blog post content.\n\n\n\nCitationBibTeX citation:@online{symonds2026,\n  author = {Symonds, Stella},\n  title = {How to {Generate} {Load} {Profiles} with {ResStock} and\n    {ComStock}},\n  date = {2026-05-30},\n  url = {https://stellassymonds.github.io/posts/2026-05-30-resstock-article/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nSymonds, Stella. 2026. “How to Generate Load Profiles with\nResStock and ComStock.” May 30, 2026. https://stellassymonds.github.io/posts/2026-05-30-resstock-article/."
   },
   {
     "objectID": "index.html",
