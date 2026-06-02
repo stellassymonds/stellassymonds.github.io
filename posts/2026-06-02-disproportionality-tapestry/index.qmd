@@ -1,0 +1,20 @@
+---
+title: "ENV S 116 Final Project: Disproportionality"
+description: "Handmade tapestry depicting "
+author:
+  - name: Stella Symonds
+    url: https://stellassymonds.github.io/
+    affiliation: Environmental Studies B.S. student @ UCSB
+    affiliation-url: https://clean-coalition.org/stella-symonds/
+date: 05-30-2026
+citation:
+  url: https://stellassymonds.github.io/posts/2026-06-02-disproportionality-tapestry/ 
+image: tapestry.png 
+draft: false
+---
+![Disproportionality.](tapestry.png)
+
+I created a tapestry that depicts the concept of disproportionality and its roots in the social inequalities that our systems are built on. On the left side representing the privileged few, two people stand on a pyramid of money. Their river is healthy and bright blue and they have a living tree and shrubs, since the pollution they create and profit off of is affecting the other side of the land. They can look up and see stars in the night sky. The pollution they create barely degrades their part of the world, so they don’t feel a need to change how they live. Their high-polluting buildings and factories are purposefully placed as close to low-income and predominantly POC neighborhoods as possible. On the right side depicting the majority of the population, their stars in the night sky are replaced with a cloud of gray. Instead of a pyramid of money, the people have built scaffolding to bring them up to the same height as the privileged few. I used a dark red color for the ground to provoke feelings of urgency and doom from the viewer. I wanted the megaphone to stand out and represent urgency, so I wanted it to be the only part of the tapestry in white and bright red. It is up to the viewer whether the privileged few will choose to listen and change their ways or continue to turn a blind eye to the majority of the population’s suffering. 
+In the spirit of sustainability, my tapestry is made completely of secondhand or scrap materials I have collected or been donated over my time as a seamstress, with a significant portion being both secondhand and scrap material. Even the thread is secondhand! When I create, whether that be with sewing or other methods, I do it as sustainably as I can. In my mind, sewing with secondhand fabric makes the process even more special, as the fabric itself has a story behind it. 
+
+My tapestry was later featured in a soecial issue of a magazine and in x. 
