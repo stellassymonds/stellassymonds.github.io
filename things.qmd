@@ -3,26 +3,30 @@ title: "Things I've made"
 editor: visual
 ---
 
-After a day of
+After a day of staring at a screen, I like to change it up with a hands-on activity.
 
 ## Baking
 
-This past year I've been experimenting with yeast! I baked my first loaf of bread and tested out cinnamon rolls and cardamom buns.
+This past year I've been experimenting with yeast! I baked my first loaf of bread and tested out cinnamon rolls and cardamom buns. I'm building up courage to tackle sourdough next year.
 
-:::::: {layout-style="auto" layout-ncol="3"}
-::::: figure
-![One of my recent loaves](media/bread.png){.regular-hover width="1000"}
+::: {layout-ncol="3"}
+![One of my recent loaves](media/bread.jpg){fig-align="left" width="300"}
 
-::: figure
-![Cinnamon rolls with extra cinnamon](media/cinnamon.png){.regular-hover}
+![Cinnamon rolls with extra cinnamon](media/cinnamon.jpg){fig-align="center" width="300"}
+
+![Cardamom buns inspired by my summer in Barcelona](media/cardamom.jpg){alt="Cinnamon rolls with extra cinnamon" fig-align="center" width="300"}
 :::
-
-::: figure
-![Cardamom buns inspired by my summer in Barcelona](media/cardamom.png){.regular-hover}
-:::
-:::::
-::::::
 
 ## Sewing
 
 ## Crochet
+
+Cat hats are a quick project that require little time and produce a lot of joy (not their joy, as you can see).
+
+::: {layout-ncol="3"}
+![](media/pumpkin-hat.jpg){alt="One of my recent loaves" fig-align="left" width="300"}
+
+![](media/beanie.jpg){alt="Cinnamon rolls with extra cinnamon" fig-align="center" width="300"}
+
+![](media/party-hat.jpg){alt="Cinnamon rolls with extra cinnamon" fig-align="right" width="300"}
+:::
