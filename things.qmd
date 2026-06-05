@@ -14,7 +14,7 @@ This past year I've been experimenting with yeast! I baked my first loaf of brea
 
 ![Cinnamon rolls with extra cinnamon](media/cinnamon.jpg){fig-align="center" width="300"}
 
-![Cardamom buns inspired by my summer in Barcelona](media/cardamom.jpg){alt="Cinnamon rolls with extra cinnamon" fig-align="center" width="300"}
+![Cinnamon rolls with extra cinnamon](media/cardamom.jpg){fig-align="center" width="300"}
 :::
 
 ## Sewing

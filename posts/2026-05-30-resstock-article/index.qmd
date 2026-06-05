@@ -9,7 +9,7 @@ author:
 date: 05-30-2026
 citation:
   url: https://stellassymonds.github.io/posts/2026-05-30-resstock-article/ 
-image: resstock.png 
+image: resstock.jpg 
 draft: false
 ---
 

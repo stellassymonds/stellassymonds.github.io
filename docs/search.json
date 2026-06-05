@@ -4,7 +4,21 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Hobbies\nI am a super crafty person! My grandma taught me to sew and crochet at a young age, and I never stopped. I make clothing items fo rmyself from scratch, upcycle items that I thrift, and tailor clothes for my friends. Check out these bowls I just made at a pottery studio in Goleta! It was my first time wheel-throwing."
+    "text": "Hobbies\nI am a super crafty person! My grandma taught me to sew and crochet at a young age, and I never stopped. I make clothing items for myself from scratch, upcycle items that I thrift, and tailor clothes for my friends. I also enjoy embroidery, painting, and coloring. Check out these bowls I just made at a pottery studio in Goleta! It was my first time wheel-throwing.\n\n\n\nMy love for tea\nI am a self-proclaimed tea connoisseur. English breakfast and earl grey are my morning go-tos, and I default to matcha lattes in the afternoons. I like to experiment with making my own syrups and trying different flavor combinations. My current favorite is a passionfruit vanilla matcha latte. At any given time, chances are I’ll be holding a fun drink!\n\n\nTravels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLast summer, I was fortunate to have the opportunity to study abroad in Barcelona, Spain. I took classes in Spanish during the week and explored the region on the weekends. I especially enjoyed a trip to Venice, Italy, where I then took the train to Lake Garda. See the interactive map below for my other past destinations!"
+  },
+  {
+    "objectID": "about.html#my-love-for-tea",
+    "href": "about.html#my-love-for-tea",
+    "title": "About Me",
+    "section": "My love for tea",
+    "text": "My love for tea\nI am a self-proclaimed tea connoisseur. English breakfast and earl grey are my morning go-tos, and I default to matcha lattes in the afternoons. I like to experiment with making my own syrups and trying different flavor combinations. My current favorite is a passionfruit vanilla matcha latte. At any given time, chances are I’ll be holding a fun drink!"
+  },
+  {
+    "objectID": "about.html#travels",
+    "href": "about.html#travels",
+    "title": "About Me",
+    "section": "Travels",
+    "text": "Travels\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLast summer, I was fortunate to have the opportunity to study abroad in Barcelona, Spain. I took classes in Spanish during the week and explored the region on the weekends. I especially enjoyed a trip to Venice, Italy, where I then took the train to Lake Garda. See the interactive map below for my other past destinations!"
   },
   {
     "objectID": "posts/2026-06-02-disproportionality-tapestry/index.html",
@@ -25,7 +39,7 @@
     "href": "things.html#baking",
     "title": "Things I’ve made",
     "section": "Baking",
-    "text": "Baking\nThis past year I’ve been experimenting with yeast! I baked my first loaf of bread and tested out cinnamon rolls and cardamom buns.\n\n\n\n\n\n\nOne of my recent loaves\n\n\n\n\n\n\n\nCinnamon rolls with extra cinnamon\n\n\n\n\n\n\n\nCardamom buns inspired by my summer in Barcelona"
+    "text": "Baking\nThis past year I’ve been experimenting with yeast! I baked my first loaf of bread and tested out cinnamon rolls and cardamom buns. I’m building up courage to tackle sourdough next year.\n\n\n\n\n\n\nOne of my recent loaves\n\n\n\n\n\n\n\nCinnamon rolls with extra cinnamon\n\n\n\n\n\n\n\nCinnamon rolls with extra cinnamon"
   },
   {
     "objectID": "things.html#sewing",
@@ -68,12 +82,5 @@
     "title": "Stella Symonds",
     "section": "",
     "text": "Hi! My name is Stella Symonds and I am from Orinda, CA. I am in my third year at UCSB pursuing a B.S. in Environmental Studies with a concentration in Statistics. This website serves as a personal portfolio. Please reach out via email if you’d like to connect!"
-  },
-  {
-    "objectID": "about.html#drinks",
-    "href": "about.html#drinks",
-    "title": "About Me",
-    "section": "Drinks",
-    "text": "Drinks\nI am a self-proclaimed tea connoisseur.\nTravels\nphoto\nLast summer, I was fortunate to have the opportunity to study abroad in Barcelona, Spain. I took classes in Spanish during the week and explored the region on the weekends. I especially enjoyed a trip to Venice, Italy, where I then took the train to Lake Garda.\nI also recently traveled to Portland, Oregon and witnessed the beauty of their spring bloom."
   }
 ]

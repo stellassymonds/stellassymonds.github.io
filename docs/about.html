@@ -68,6 +68,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-3.0.0/leaflet-providers.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -128,7 +140,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#drinks" id="toc-drinks" class="nav-link active" data-scroll-target="#drinks">Drinks</a></li>
+  <li><a href="#hobbies" id="toc-hobbies" class="nav-link active" data-scroll-target="#hobbies">Hobbies</a></li>
+  <li><a href="#my-love-for-tea" id="toc-my-love-for-tea" class="nav-link" data-scroll-target="#my-love-for-tea">My love for tea</a></li>
+  <li><a href="#travels" id="toc-travels" class="nav-link" data-scroll-target="#travels">Travels</a></li>
   </ul>
 </nav>
     </div>
@@ -154,16 +168,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hobbies</p>
-<p>I am a super crafty person! My grandma taught me to sew and crochet at a young age, and I never stopped. I make clothing items fo rmyself from scratch, upcycle items that I thrift, and tailor clothes for my friends. Check out these bowls I just made at a pottery studio in Goleta! It was my first time wheel-throwing.</p>
-<p><img src="media/pottery.jpg" class="img-fluid" alt="Me with my handmade bowls"></p>
-<section id="drinks" class="level2">
-<h2 class="anchored" data-anchor-id="drinks">Drinks</h2>
-<p>I am a self-proclaimed tea connoisseur.</p>
-<p>Travels</p>
-<p>photo</p>
-<p>Last summer, I was fortunate to have the opportunity to study abroad in Barcelona, Spain. I took classes in Spanish during the week and explored the region on the weekends. I especially enjoyed a trip to Venice, Italy, where I then took the train to Lake Garda.</p>
-<p>I also recently traveled to Portland, Oregon and witnessed the beauty of their spring bloom.</p>
+<section id="hobbies" class="level3">
+<h3 class="anchored" data-anchor-id="hobbies">Hobbies</h3>
+<p>I am a super crafty person! My grandma taught me to sew and crochet at a young age, and I never stopped. I make clothing items for myself from scratch, upcycle items that I thrift, and tailor clothes for my friends. I also enjoy embroidery, painting, and coloring. Check out these bowls I just made at a pottery studio in Goleta! It was my first time wheel-throwing.</p>
+<p><img src="media/pottery.jpg" class="img-fluid" alt="Me with my handmade bowls" width="800"></p>
+</section>
+<section id="my-love-for-tea" class="level3">
+<h3 class="anchored" data-anchor-id="my-love-for-tea">My love for tea</h3>
+<p>I am a self-proclaimed tea connoisseur. English breakfast and earl grey are my morning go-tos, and I default to matcha lattes in the afternoons. I like to experiment with making my own syrups and trying different flavor combinations. My current favorite is a passionfruit vanilla matcha latte. At any given time, chances are I’ll be holding a fun drink!</p>
+</section>
+<section id="travels" class="level3">
+<h3 class="anchored" data-anchor-id="travels">Travels</h3>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="media/venice.jpg" class="img-fluid quarto-figure quarto-figure-left figure-img" alt="One of my recent loaves" width="300"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/cafe.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Cinnamon rolls with extra cinnamon" width="300"></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="media/torbole.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" alt="Cinnamon rolls with extra cinnamon" width="300"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Last summer, I was fortunate to have the opportunity to study abroad in Barcelona, Spain. I took classes in Spanish during the week and explored the region on the weekends. I especially enjoyed a trip to Venice, Italy, where I then took the train to Lake Garda. See the interactive map below for my other past destinations!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-8a2236b0e84857cde3dc" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8a2236b0e84857cde3dc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["Esri.WorldImagery",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[37.9838,41.9028,43.5804,40.4168,20.9297,40.7128,45.5152,47.6062,19.4326,51.5074,39.6953,35.2401,38.7223,22.8905,35.6764,47.3769,41.3874,39.4699,36.5323],[23.7275,12.4964,7.1251,-3.7038,-156.694,-74.006,-122.6784,-122.3321,-99.1332,-0.1278,3.0176,24.8093,-9.1393,-109.9167,139.65,8.541700000000001,2.1686,-0.3763,-116.9325],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Athens, Greece","Rome, Italy","Antibes, France","Madrid, Spain","Kaanapali, Maui","New York City, USA","Portland, USA","Seattle, USA","Mexico City, Mexico","London, England","Mallorca, Spain","Crete, Greece","Lisbon, Portugal","Cabo, Mexico","Tokyo, Japan","Zurich, Switzerland","Barcelona, Spain","Valencia, Spain","Death Valley, USA"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[37.9838,41.9028,43.5804,40.4168,20.9297,40.7128,45.5152,47.6062,19.4326,51.5074,39.6953,35.2401,38.7223,22.8905,35.6764,47.3769,41.3874,39.4699,36.5323],[23.7275,12.4964,7.1251,-3.7038,-156.694,-74.006,-122.6784,-122.3321,-99.1332,-0.1278,3.0176,24.8093,-9.1393,-109.9167,139.65,8.541700000000001,2.1686,-0.3763,-116.9325],{"iconUrl":{"data":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=","index":0},"iconWidth":1,"iconHeight":1},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["Athens, Greece","Rome, Italy","Antibes, France","Madrid, Spain","Kaanapali, Maui","New York City, USA","Portland, USA","Seattle, USA","Mexico City, Mexico","London, England","Mallorca, Spain","Crete, Greece","Lisbon, Portugal","Cabo, Mexico","Tokyo, Japan","Zurich, Switzerland","Barcelona, Spain","Valencia, Spain","Death Valley, USA"],{"interactive":false,"permanent":true,"direction":"bottom","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":true,"style":{"color":"white","font-size":"12px","font-weight":"bold"},"className":"","sticky":true},null]}],"limits":{"lat":[19.4326,51.5074],"lng":[-156.694,139.65]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
 </section>
