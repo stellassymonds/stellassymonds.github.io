@@ -1,0 +1,198 @@
+---
+title: "ENV S 193DS: Homework 2"
+description: "Using code to determine whether urchin gonad weights differ by experimental treatment."
+author:
+  - name: Stella Symonds
+    url: https://stellassymonds.github.io/
+    affiliation: Environmental Studies B.S. student @ UCSB
+date: 06-02-2026
+citation:
+  url: https://stellassymonds.github.io/posts/2026-06-02-urchin-weights/ 
+image: weights.png 
+draft: false
+---
+
+This is Problem 2 of my Homework 2 assignment, which is attached at the bottom of the page. In this problem, I used statistical testing to determine whether consumption of nutrient-enriched seaweed leads to increases in urchin gonad weight. Red sea urchin gonads are of high value in California's fishing economy, so cultivating urchins with larger gonads would bring in more income. 
+
+## Read in packages and data
+```{r}
+#| label: loading-packages
+#| message: false
+#| warning: false
+#| code-fold: true
+
+# loading in packages
+library("tidyverse")
+library("janitor")
+library("effsize")
+
+# creating new object called urchins, storing data
+urchins <- read_csv("urchin-experiment-data.csv") 
+```
+
+## a. Clean the urchin weight data
+
+Clean column names, select for preferred columns, and display 10 random rows from the data frame. 
+```{r}
+#| label: cleaning-data
+#| code-fold: true
+
+# create new object from urchins 
+urchins_clean <- urchins |> 
+ # clean column names
+   clean_names() |> 
+  drop_na() |> 
+  # change c and n to be full words 
+  mutate(experimental_treatment = case_when( 
+    # fill in Control to replace c
+    experimental_treatment == "c" ~ "Control", 
+    # fill in Nutrient-enriched to replace n
+    experimental_treatment == "n" ~ "Nutrient-enriched" 
+  )) |> 
+  # select experimental_treatment and gonad weight columns
+  select(experimental_treatment, weight_g)
+
+# display 10 random rows 
+slice_sample(urchins_clean, n = 10)
+```
+
+## b. Create a summary of the data
+```{r}
+#| label: urchins-summary
+#| code-fold: true
+
+# create new object from urchins_clean
+urchins_summary <- urchins_clean |> 
+  group_by(experimental_treatment) |> 
+  summarize( # add what i want in summary
+    mean = mean(weight_g),
+    n = length(weight_g),
+    sd = sd(weight_g))  |>
+  ungroup() # ungroup the data frame
+
+urchins_summary # display the summary
+```
+
+## c. Create an SD plot
+```{r}
+#| label: sd-plot
+#| code-fold: true
+
+# start with the urchins_clean data frame
+ggplot(data = urchins_clean, 
+       # x-axis should be experimental treatment
+       # y-axis should be urchin gonad weight 
+       # coloring by experimental treatment
+       mapping = aes(x = experimental_treatment, 
+                     y = weight_g, 
+                     color = experimental_treatment)) + 
+   # first layer: jitterplot
+   geom_jitter(height = 0, # no jitter in vertical direction
+              width = 0.2, # small horizontal jitter
+              shape = 21) + # open circle shape 
+  # second layer: represent means at each site
+  stat_summary(geom = "point",
+               fun = mean,
+               size = 3) + # make points bigger
+  # third layer: bars to represent standard deviation
+  geom_errorbar(data = urchins_summary, # use summary data frame
+                mapping = aes(x = experimental_treatment, 
+                              y = mean, # assign axes based on summary frame
+                              ymin = mean - sd, 
+                              ymax = mean + sd,
+                width = 0.1)) + # make the bars narrower
+  # relabelling x- and y-axes
+  labs(x = "Experimental treatment", 
+       y = "Urchin gonad weight (grams)") + 
+  theme_light() + # custom theme
+  # custom colors
+  scale_color_manual(values = c("Control" = "darkblue",
+                                "Nutrient-enriched" = "red3")) +
+  theme(legend.position = "none") # taking out legend
+```
+
+## d. Hypotheses
+
+Null hypothesis: The difference in mean urchin gonad weight between urchins who consume normal seaweed and those who consume nutrient-enriched seaweed is equal to 0. 
+
+Alternative hypothesis: The difference in mean urchin gonad weight between urchins who consume normal seaweed and those who consume nutrient-enriched seaweed is not equal to 0. 
+
+## e. QQ plot to determine normality
+```{r}
+#| label: qq-plot
+#| code-fold: true
+
+# base layer: ggplot 
+ggplot(data = urchins_clean, # starting data frame
+       aes(sample = weight_g)) + # y-axis for QQ plot 
+  # first layer: QQ reference line 
+  geom_qq_line(color = "red") + # adding a color
+  # second layer: QQ plot
+  geom_qq() + 
+  # creating "facets"
+  facet_wrap(~experimental_treatment) # show treatments separately
+```
+
+## f. Justify distribution based on QQ plot
+
+Urchin gonad weight is normally distributed because the data points follow a straight diagonal line with a 45 degree angle.  
+
+## g. Check variances with a “gut check” and a statistical check
+
+Calculate variances by treatment, 
+```{r}
+#| label: checking-variances
+#| code-fold: true
+
+# calculate variances with gut check
+urchin_weight_var <- urchins_clean |> # starting data frame
+  group_by(experimental_treatment) |> # group by experimental treatment
+  summarize(variance = var(weight_g)) # calculate variances
+
+# calculate variance ratio 
+urchin_weight_var
+75.2/15.3 # gut check
+
+# statistical check: F test of equal variances
+var.test(
+  weight_g ~ experimental_treatment, # formula: response variable ~ grouping variable
+  data = urchins_clean) # data: urchins-clean data frame
+```
+
+## h. Do a t-test
+```{r}
+#| label: t-test
+#| code-fold: true
+
+t.test( 
+  # formula: response variable ~ grouping variable
+  weight_g ~ experimental_treatment, 
+  # argument for unequal variances
+  var.equal = FALSE, 
+  # data: urchins_clean data frame
+  data = urchins_clean)
+```
+
+## i. Explanation of test choice
+
+A t-test would have been appropriate for testing my hypothesis from part d because I am testing for a true difference in means between two groups. I evaluated normality by creating a QQ plot and evaluated homogeneity of variance by manually calculating the variances and running an F test. Because the group variances were unequal, I decided to do a Welch's Two Sample t-test. 
+
+## j. Calculate effect size
+```{r}
+#| label: calculate-effect-size
+#| code-fold: true
+
+# calculate cohen's d 
+d <- cohen.d(weight_g ~ experimental_treatment, data = urchins_clean)
+
+d # display effect size value 
+```
+
+## k. Statistical summary
+
+We found evidence to suggest that consumption of nutrient-enriched seaweed has a moderate effect (Cohen's d = 0.70) on mean urchin gonad weights (Welch Two Sample t-test, t(59.2) = -3.27, p=0.002, $\alpha$ = 0.05). On average, urchins who ate nutrient-enriched seaweed (n=35, mean=31.8) had higher gonad weights than urchins who ate normal seaweed (n=42, mean=26.7). 
+
+## Full assignment 
+<iframe src="homework-02-template.pdf" width="100%" height="600px">
+
+</iframe>
