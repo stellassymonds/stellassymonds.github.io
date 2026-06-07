@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+
+// Import fonts 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Young+Serif&display=swap');
+
+// Colors
+$maroon: #9C2853;
+$pink: #FAE8EF;
+
+// Base document colors
+$navbar-bg: $maroon; // navbar
+$navbar-hl: $pink; // highlight color when hovering over navbar links
+$body-bg: $pink; // page background 
+$link-color: $maroon; // hyperlinks 
+
+/*-- scss:rules --*/
+
+h1, h2 {
+  color: $maroon;
+}
+

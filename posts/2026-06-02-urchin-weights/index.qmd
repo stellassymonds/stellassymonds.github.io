@@ -139,7 +139,6 @@ Urchin gonad weight is normally distributed because the data points follow a str
 
 ## g. Check variances with a “gut check” and a statistical check
 
-Calculate variances by treatment, 
 ```{r}
 #| label: checking-variances
 #| code-fold: true

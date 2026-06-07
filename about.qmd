@@ -3,17 +3,17 @@ title: "About me"
 editor: visual
 ---
 
-### Hobbies
+## Hobbies
 
 I am a super crafty person! My grandma taught me to sew and crochet at a young age, and I never stopped. I make clothing items for myself from scratch, upcycle items that I thrift, and tailor clothes for my friends. I also enjoy embroidery, painting, and coloring. Check out these bowls I just made at a pottery studio in Goleta! It was my first time wheel-throwing.
 
 ![](media/pottery.png){fig-alt="Me with my handmade bowls" width="700"}
 
-### My love for tea
+## My love for tea
 
 I am a self-proclaimed tea connoisseur. English breakfast and earl grey are my morning go-tos, and I default to matcha lattes in the afternoons. I like to experiment with making my own syrups and trying different flavor combinations. My current favorite is a passionfruit vanilla matcha latte. At any given time, chances are I'll be holding a fun drink!
 
-### Travels
+## Travels
 
 ::: {layout-ncol="3"}
 ![](media/venice.png){alt="One of my recent loaves" fig-align="left" width="300"}

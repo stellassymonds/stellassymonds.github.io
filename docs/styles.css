@@ -1,7 +1,0 @@
-/* css styles */
-
-img, a img, .quarto-figure img {
-  opacity: 1.0 !important;
-  filter: none !important;
-  background-color: transparent !important;
-}
